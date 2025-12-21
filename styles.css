@@ -190,3 +190,9 @@ a:hover{color:#2d1d16; text-decoration-thickness: 2px}
 :root[data-theme="dark"] .site-nav a.active{color:#2b201b}
 :root[data-theme="dark"] .btn{background:var(--card); color:var(--uw-gold); border-color:#5a4236}
 :root[data-theme="dark"] .btn.primary{background:var(--uw-gold); color:#2b201b}
+.pub-profiles{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 10px 0 18px;
+}
