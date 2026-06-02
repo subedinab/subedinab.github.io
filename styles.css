@@ -196,3 +196,211 @@ a:hover{color:#2d1d16; text-decoration-thickness: 2px}
   flex-wrap: wrap;
   margin: 10px 0 18px;
 }
+/* ---------- Modal Styles ---------- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  backdrop-filter: blur(3px);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 6% auto;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  max-width: 800px;
+  max-height: 80vh;
+  overflow-y: auto;
+  line-height: 1.6;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.modal-content h2 { margin-top: 0; }
+
+.modal-close {
+  float: right;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #666;
+  transition: color .2s;
+}
+.modal-close:hover { color: #000; }
+
+@media (max-width: 600px) {
+  .modal-content { width: 90%; padding: 1.5rem; }
+}
+/* ---------- Hover hint ---------- */
+.hover-hint{
+  margin-left: 8px;
+  opacity: 0.75;
+}
+
+/* Make sure popovers can overlay cards nicely */
+.grid.cards, .cards, .card{
+  overflow: visible;
+}
+
+/* ---------- Project Hover Popover ---------- */
+.project-popover{
+  position: fixed;
+  z-index: 2000;
+  width: min(720px, calc(100vw - 24px));
+  max-height: min(78vh, 720px);
+  overflow: auto;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px) scale(0.99);
+  transition: opacity 140ms ease, transform 140ms ease;
+
+  background: rgba(255,255,255,0.96);
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.18);
+  backdrop-filter: blur(10px);
+}
+
+.project-popover.open{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.project-popover .pp{
+  padding: 18px 18px 16px;
+}
+
+.pp-head{
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.pp-title{
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-size: 1.05rem;
+}
+
+.pp-sub{
+  margin-top: 4px;
+  font-size: 0.92rem;
+  opacity: 0.78;
+  line-height: 1.35;
+}
+
+.pp-badge{
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #f2c84b;          /* UW gold style */
+  color: #111;
+  white-space: nowrap;
+}
+
+.pp-summary{
+  margin: 10px 0 14px;
+  line-height: 1.55;
+  opacity: 0.95;
+}
+
+.pp-stats{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.stat{
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 14px;
+  padding: 10px 10px 9px;
+  background: rgba(255,255,255,0.75);
+}
+
+.stat .k{
+  font-size: 0.78rem;
+  opacity: 0.75;
+  margin-bottom: 4px;
+}
+
+.stat .v{
+  font-weight: 800;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.stat .s{
+  margin-top: 4px;
+  font-size: 0.78rem;
+  opacity: 0.75;
+}
+
+.pp-charts{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.mini-chart{
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 14px;
+  padding: 10px 10px 8px;
+  background: rgba(255,255,255,0.75);
+}
+
+.mini-chart svg{
+  width: 100%;
+  height: 92px;
+}
+
+.mini-chart rect,
+.mini-chart line,
+.mini-chart path,
+.mini-chart polyline{
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.mini-chart figcaption{
+  margin-top: 8px;
+  font-size: 0.78rem;
+  opacity: 0.78;
+  line-height: 1.25;
+}
+
+.pp-notes{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 6px 0 12px;
+}
+
+.pp-chip{
+  font-size: 0.78rem;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.10);
+  background: rgba(0,0,0,0.03);
+}
+
+.pp-foot{
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 6px;
+}
+
+@media (max-width: 780px){
+  .pp-stats{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pp-charts{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
