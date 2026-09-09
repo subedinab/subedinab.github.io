@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nabaraj Subedi</title>
-  <meta name="description" content="Nabaraj Subedi — M.S. student in Computer Science at the University of Wyoming, working on multimodal retrieval-augmented generation, agentic AI, and 3D world models for the built environment." />
+  <title>Publications &mdash; Nabaraj Subedi</title>
+  <meta name="description" content="Publications by Nabaraj Subedi on multimodal retrieval-augmented generation, 3D world models, and vision-language systems." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" href="assets/profile.png" />
 </head>
@@ -20,8 +20,8 @@
 
       <nav class="site-nav" id="site-nav">
         <ul>
-          <li><a href="index.html" class="current">Homepage</a></li>
-          <li><a href="publications.html">Publications</a></li>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="publications.html" class="current">Publications</a></li>
           <li><a href="teaching.html">Teaching</a></li>
           <li><a href="assets/Nabaraj_Subedi_CV.pdf">CV</a></li>
         </ul>
@@ -71,75 +71,44 @@
       </aside>
 
       <div class="content">
-        <h1 class="page-title">Nabaraj Subedi&rsquo;s Website</h1>
+        <h1 class="page-title">Publications</h1>
 
-        <p>
-          I am an M.S. student in Computer Science at the University of Wyoming, advised by
-          Dr. Shivanand Venkanna Sheshappanavar (Geometric Intelligence Lab, EECS) and co-supervised by
-          Dr. Ahmed Abdelaty (Civil &amp; Architectural Engineering). My work is in multimodal
-          retrieval-augmented generation, agentic AI, and 3D world models, with a focus on building
-          grounded, compliance-aware systems for the built environment.
-        </p>
+        <p class="meta">Also on <a href="https://www.researchgate.net/profile/Nabaraj-Subedi-3" target="_blank" rel="noreferrer">ResearchGate</a>.</p>
 
-        <h2>Research interests</h2>
-        <ul>
-          <li>Multimodal retrieval-augmented generation</li>
-          <li>Agentic AI and compliance reasoning</li>
-          <li>3D world models and generative 3D</li>
-          <li>Vision&ndash;language models</li>
-        </ul>
-
-        <h2>Current and recent projects</h2>
-
-        <p>
-          <strong>ConstructGPT.</strong> A BIM-conditioned 3D latent diffusion and construction world model
-          paired with a multimodal RAG compliance agent, trained on H100 GPUs. It reaches 0.806 VAE IoU on
-          Rohbau3D and 0.534 leave-one-building-out world-model F1, and comes with a 417-sample BIM-anomaly
-          benchmark. The goal is to automate construction-site monitoring and code-compliance checking directly
-          from 3D scans against BIM. Accepted to the 2nd 3D-LLM/VLA Workshop at CVPR 2026.
-        </p>
-
-        <p>
-          <strong>Visual-first retrieval for civil standard plans.</strong> I work on retrieval that reads
-          engineering drawings as images rather than flattening them to text, so question answering and
-          compliance checking stay grounded in what the plan actually shows. A related line of work studies
-          why adding more documents can hurt RAG, and uses domain-scoped, model-agnostic retrieval to keep
-          vector search from diluting the signal.
-        </p>
-
-        <p>
-          <strong>WYDOT knowledge-graph assistant.</strong> A multi-agent RAG system over a Neo4j knowledge
-          graph (150K+ nodes, 330K+ relationships) indexing 1,656+ Wyoming Department of Transportation
-          engineering documents, with hybrid dense and sparse retrieval and a serverless backend on Google
-          Cloud Run.
-        </p>
-
-        <h2>Selected publications</h2>
+        <h2>2026</h2>
         <ol class="pub-list">
           <li>
             <a class="pub-title" href="https://arxiv.org/abs/2608.26091" target="_blank" rel="noreferrer">PlanSightRAG: A Visual-First Multimodal RAG for Automating Question Answering and Compliance Checking for Civil Standard Plans</a>
             <span class="pub-authors">N. Subedi, S. D. Datta, A. Abdelaty, S. V. Sheshappanavar</span>
             <span class="pub-venue">arXiv preprint arXiv:2608.26091, 2026</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2608.26091" target="_blank" rel="noreferrer">arXiv</a></span>
           </li>
           <li>
             <a class="pub-title" href="https://arxiv.org/abs/2606.11350" target="_blank" rel="noreferrer">When More Documents Hurt RAG: Mitigating Vector Search Dilution with Domain-Scoped, Model-Agnostic Retrieval</a>
             <span class="pub-authors">N. Subedi, A. Abdelaty, S. V. Sheshappanavar</span>
             <span class="pub-venue">arXiv preprint arXiv:2606.11350, 2026</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2606.11350" target="_blank" rel="noreferrer">arXiv</a></span>
           </li>
           <li>
             <span class="pub-title">ConstructGPT: BIM-Conditioned 3D Diffusion and World Models for Automated Construction Site Monitoring and Compliance Checking</span>
             <span class="pub-authors">N. Subedi, Y. Majeed, A. Abdelaty, S. V. Sheshappanavar</span>
-            <span class="pub-venue">2nd 3D-LLM/VLA Workshop, CVPR 2026 &mdash; accepted, Denver, CO</span>
+            <span class="pub-venue">2nd 3D-LLM/VLA Workshop, CVPR 2026 &mdash; accepted (poster #49), Denver, CO</span>
           </li>
         </ol>
-        <p><a href="publications.html">See all publications &rarr;</a></p>
 
-        <h2>Collaboration</h2>
-        <p>
-          I am open to collaborations in multimodal AI, 3D vision, and applications to civil and
-          transportation infrastructure &mdash; especially projects that connect rigorous methods with
-          real engineering practice. Email: <a href="mailto:nsubedi1@uwyo.edu">nsubedi1@uwyo.edu</a>
-        </p>
+        <h2>2024</h2>
+        <ol class="pub-list">
+          <li>
+            <a class="pub-title" href="https://doi.org/10.36548/jscp.2024.1.006" target="_blank" rel="noreferrer">Nepali Image Captioning: Generating Coherent Paragraph-Length Descriptions Using Transformer</a>
+            <span class="pub-venue">Journal of Soft Computing Paradigm, 6(1), 2024</span>
+            <span class="pub-links"><a href="https://doi.org/10.36548/jscp.2024.1.006" target="_blank" rel="noreferrer">DOI</a></span>
+          </li>
+          <li>
+            <a class="pub-title" href="https://doi.org/10.36548/jismac.2024.1.005" target="_blank" rel="noreferrer">Drowsiness and Crash Detection Mobile Application for Vehicle&rsquo;s Safety</a>
+            <span class="pub-venue">Journal of IoT in Social, Mobile, Analytics, and Cloud, 6(1), 2024</span>
+            <span class="pub-links"><a href="https://doi.org/10.36548/jismac.2024.1.005" target="_blank" rel="noreferrer">DOI</a></span>
+          </li>
+        </ol>
       </div>
     </div>
   </main>

@@ -1,0 +1,257 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT) — Template by Jitin Nair, modified for Nabaraj Subedi
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+\documentclass[a4paper,10pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.88, top=1cm, bottom=1cm, left=1cm, right=1cm]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\usepackage{supertabular}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+\usepackage{setspace}
+\setstretch{0.9}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{6pt}{6pt}
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\usepackage{fontawesome5}
+
+% GitHub code link: \gh{repo-name} renders a linked icon
+\newcommand{\gh}[1]{\,\href{https://github.com/Nabarajsub/#1}{\faGithub}}
+
+% job listing environments
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill & #2 \\[1.5pt]
+    \end{tabularx}
+    }
+    {}
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill & #2 \\[1.5pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep, noitemsep, leftmargin=0.8em, itemsep=0pt, topsep=0pt, parsep=0pt, label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}
+    }
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+\pagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+%	HEADER
+%----------------------------------------------------------------------------------------
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\textbf{\large{Nabaraj Subedi}} \\[4pt]
+\href{https://github.com/Nabarajsub}{\raisebox{-0.05\height}\faGithub\ Nabarajsub} \ $|$ \
+\href{https://www.linkedin.com/in/nabaraj-subedi}{\raisebox{-0.05\height}\faLinkedin\ nabaraj-subedi} \ $|$ \
+\href{https://subedinab.github.io/}{\raisebox{-0.05\height}\faGlobe\ subedinab.github.io} \ $|$ \
+\href{mailto:nsubedi1@uwyo.edu}{\raisebox{-0.05\height}\faEnvelope\ nsubedi1@uwyo.edu} \ $|$ \
+\href{tel:+13073576341}{\raisebox{-0.05\height}\faMobile\ +1 (307) 357-6341}
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS
+%----------------------------------------------------------------------------------------
+\vspace{3pt}
+\noindent\textbf{Research Interests:}\ Multimodal Retrieval-Augmented Generation $\cdot$ Agentic AI $\cdot$ 3D World Models  $\cdot$ Vision-Language Models   $\cdot$ 3D Foundation Models
+\vspace{1pt}
+
+%----------------------------------------------------------------------------------------
+% PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{Publications}
+
+\textbf{ConstructGPT: BIM-Conditioned 3D Diffusion and World Models for Automated Construction Site Monitoring and Compliance Checking} \hfill 2026\\
+\textit{N. Subedi, Y. Majeed, A. Abdelaty, S. V. Sheshappanavar}\\
+CVPR 2026 Workshop: 2nd 3D-LLM/VLA Workshop, Accepted , Denver, CO
+
+\textbf{When More Documents Hurt RAG: Mitigating Vector Search Dilution with Domain-Scoped, Model-Agnostic Retrieval} \hfill 2026\\
+\textit{N. Subedi, A. Abdelaty, S. V. Sheshappanavar}
+Under Review, ACL ARR 2026 
+
+\textbf{Visual-First Multimodal RAG with Agentic Compliance and Visual Grounding: Automating QA and Compliance Checking for Civil Standard Plans } \hfill 2026\\
+\textit{N. Subedi, D.Suvo, A. Abdelaty, S. V. Sheshappanavar}
+(Manuscript under revision in  Automation in Construction) \\
+
+\textbf{CivilAny: Multimodal Model for Civil Infrastructure Inspection and Design } \hfill 2026\\
+\textit{N. Subedi, A. Abdelaty, S. V. Sheshappanavar}
+(Submitted to ACCV 2026 and under review)
+
+
+
+%----------------------------------------------------------------------------------------
+%	CONFERENCE PRESENTATIONS
+%----------------------------------------------------------------------------------------
+\section{Conference Presentations}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{ConstructGPT} (Poster Presentation) $\cdot$ CVPR 2026 Workshop: 2nd 3D-LLM/VLA Workshop $\cdot$ Denver, CO & June 2026 \\[2pt]
+\textbf{Teaching Models to Work in 3D: Perceiving, Predicting, and Generating 3D Infrastructure Geometry} (Lightning Talk) $\cdot$ AI Summit $\cdot$ University of Wyoming & Sept 1, 2026 \\[2pt]
+\textbf{Image Captioning in Nepali Language} (Oral) $\cdot$ Gandaki University International Conference (GUIC-2024) & Jan 2024 \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{University of Wyoming} $\cdot$ M.S.\ Computer Science & Expected May 2027 \\
+\end{tabularx}
+\begin{itemize}[itemsep=-5pt, leftmargin=0.8em]
+{\setstretch{0.2}
+    \item  Advisor: Dr.\ Shivanand Venkanna Sheshappanavar (Geometric Intelligence Lab, EECS) $\cdot$ Co-advisor: Dr.\ Ahmed Abdelaty (Civil \& Arch.\ Eng.)
+    \item Courses: Machine Learning \& Data Mining, Intro to Large Language Models, Intro to Deep Learning, 3D perception for Robots
+}
+\end{itemize}
+
+\vspace{4pt}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Institute of Engineering, Tribhuwan University} $\cdot$ B.E.\ Electronics, Communication \& Information Engineering $\cdot$ Full Tuition Scholarship (merit-based) & March 2024 
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Research Experience}
+
+\begin{jobshort}{Graduate Research Assistant }{Aug 2025 -- Present}
+\textit{ University of Wyoming $\cdot$ Advisor: Dr.\ Shivanand Venkanna Sheshappanavar}
+\begin{itemize}[itemsep=-5pt]
+{\setstretch{0.2}
+    \item Built \textbf{ConstructGPT}: BIM-conditioned 3D latent diffusion +
+  construction world model + multimodal RAG compliance agent on H100 GPUs;
+  0.806 VAE IoU on Rohbau3D, 0.534 leave-one-building-out world-model $F_1$,
+  and a 417-sample BIM-anomaly benchmark.
+    \item Developed \textbf{MASDR-RAG}: domain-scoped retrieval fixed vector search dilution in 88,907-chunk WYDOT corpus; Precision@10 raised 0.77$\to$0.86 (+11.6\%) with 75\% latency reduction.\gh{masdr-rag}
+    \item Built \textbf{Civil-NEXT}, a six-modality any-to-any LLM (text/image/audio/video/3D/CAD, Qwen2.5-7B) with a custom PointCloudOutputProjector; DeepSpeed ZeRO-3 training on 8$\times$H100 over a 737K-sample corpus.
+    \item Built \textbf{Visual-First Multimodal RAG} + a 4{,}056-pair five-DOT benchmark for engineering-plan
+  compliance; benchmarked retrievers from ColPali to 2026 ViDoRe SOTA, achieving \textbf{88\% zero-shot
+  cross-agency transfer} and \textbf{100\% verdict accuracy} on 600 CAD compliance drawings via an agentic
+  Planner--Auditor--Synthesizer pipeline.\gh{plansightrag}
+    \item Built \textbf{126{,}463 validated adaptive-step chain-of-thought traces} over \textbf{10{,}172 point clouds} across three 3D benchmarks (scanned grocery items, field crops, synthetic indoor scenes) using Qwen2.5-VL-72B served locally , atop a  custom \textbf{z-buffered point-cloud renderer} (disk splatting, eye-dome lighting, all-points chunked depth buffer); fine-tuned \textbf{PointLLM-7B} and \textbf{MiniGPT-3D} on the corpus and benchmarked the against baselines using a locally-hosted Qwen judge.
+}
+\end{itemize}
+\end{jobshort}
+
+%----------------------------------------------------------------------------------------
+%	INDUSTRY EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Industry Experience}
+
+\begin{jobshort}{Junior Machine Learning Engineer}{April 2024 -- Aug 2024}
+\textit{PalmMind Technology, Nepal}
+\begin{itemize}[itemsep=-5pt]
+{\setstretch{0.2}
+    \item Built production RAG chatbots for EV dealers and insurance clients using OpenAI, LangChain, and LangGraph with orchestrator-worker workflows; reduced latency and improved multi-hop reasoning.
+    \item Implemented web scraping, OCR (Tesseract), and Redis-based caching for context-aware conversational AI at scale.
+}
+\end{itemize}
+\end{jobshort}
+
+\vspace{4pt}
+\begin{jobshort}{Teaching Assistant }{Sep 2024 -- July 2025}
+\textit{Pashchimanchal Campus, Tribhuwan University, Nepal}
+\begin{itemize}[itemsep=-5pt]
+{\setstretch{0.2}
+    \item Taught C Programming, OOP, Operating Systems, Data Mining undergraduate courses; designed lab activities, guided semester-end projects, and provided feedback to 100+ students.
+}
+\end{itemize}
+\end{jobshort}
+
+%----------------------------------------------------------------------------------------
+%	SELECTED PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Selected Projects}
+
+\begin{jobshort}{Modular Real-Time Vision Pipeline for Traffic \& Parking Analytics}{Summer 2026}
+\textit{Summer Research Project, University of Wyoming}
+\begin{itemize}[itemsep=-5pt]
+{\setstretch{0.2}
+    \item Built a \texttt{pip}-installable vision framework with a six-stage detect$\rightarrow$track$\rightarrow$render pipeline and four pluggable interfaces (detector/tracker/application/output); parking-occupancy and speed estimation ship as swappable plug-ins.
+    \item Designed speed estimation as two orthogonal axes -- distance model (scale/homography) $\times$ temporal model (Kalman, windowed median, dual-line trap) -- giving \textbf{14 estimators from 9 classes}; median smoothing cut speed jitter \textbf{32\%}.
+    \item Instrumented per-stage latency on a SLURM GPU cluster (L40S): decoupling detection from tracking gave \textbf{2$\times$ throughput} (54$\rightarrow$104 FPS) and \textbf{4.7$\times$} GPU speedup over CPU.
+}
+\end{itemize}
+\end{jobshort}
+
+\begin{jobshort}{MRAG 4.0: Multi-Agent Cognitive Digital Twin for Construction Infrastructure}{2025 -- Present}
+\textit{Research Project, University of Wyoming}
+\begin{itemize}[itemsep=-5pt]
+{\setstretch{0.2}
+    \item Integrated site video, CAD drawings, LiDAR terrain data, and operational records into a unified multi-agent reasoning pipeline with specialized agents for visual inspection, CAD intent analysis, and code compliance verification and validated on WYDOT infrastructure data design compliance — capabilities unreachable with standard RAG or existing LLM systems.
+}
+\end{itemize}
+\end{jobshort}
+
+\vspace{4pt}
+\begin{jobshort}{WYDOT Multimodal Knowledge Graph Chatbot}{Aug 2025 -- Present}
+\textit{Research Project, University of Wyoming}
+\begin{itemize}[itemsep=-5pt]
+{\setstretch{0.2}
+    \item Architected production-grade Multi-Agent RAG system over Neo4j knowledge graph (150K+ nodes, 330K+ relationships) indexing 1,656+ WYDOT engineering documents with hybrid dense+sparse retrieval.
+    \item Deployed serverless backend on GCP Cloud Run + Cloud SQL; built automated feedback-loop ingestion pipeline for self-optimization in production.
+}
+\end{itemize}
+\end{jobshort}
+
+\vspace{4pt}
+\begin{jobshort}{Nepali Image Captioning \hfill \href{https://github.com/subedinab/major-project}{\faGithub}}{2023 -- 2024}
+\textit{Undergraduate Thesis, Institute of Engineering, Tribhuwan University}
+\begin{itemize}[itemsep=-5pt]
+{\setstretch{0.2}
+    \item Transformer + Inception V3 for paragraph-length Nepali caption generation on curated 20,350-pair dataset; BLEU-4: 0.59. Published in \textit{Journal of Soft Computing Paradigm} (2024).
+}
+\end{itemize}
+\end{jobshort}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Languages}       & Python, C/C++, SQL, CUDA  \\[2pt]
+\textbf{Deep Learning}   & PyTorch, HuggingFace Transformers, DeepSpeed ZeRO-3, PEFT/LoRA, DiT, Diffusion Models \\[2pt]
+\textbf{3D Vision}       & Open3D, PyTorch3D,  Point Clouds \\[2pt]
+\textbf{VLM / LLM}       & Qwen2.5-VL, InternVL, LLaVA, GPT-4V, Fine-tuning, RAG, ColPali, LangChain, LangGraph \\[2pt]
+\textbf{Infrastructure}  & NVIDIA H100/A100, GCP Cloud Run, ARCC HPC Cluster, Docker \\[2pt]
+\textbf{Databases}       & Neo4j (Knowledge Graphs), PostgreSQL, BigQuery \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS & HONORS
+%----------------------------------------------------------------------------------------
+\section{Awards \& Honors}
+\begin{tabularx}{\linewidth}{@{}l X r@{}}
+\textbf{Graduate Scholar Award (\$5,000)} & School of Computing, University of Wyoming & 2026 -- 2027 \\[2pt]
+\textbf{Graduate Research Assistantship (GRA)} & University of Wyoming & 2025 -- Present \\[2pt]
+\textbf{Full Tuition Scholarship} & Institute of Engineering, Tribhuwan University & 2019 -- 2024 \\[2pt]
+\textbf{High School Scholarship} & SOS Hermann Gmeiner Secondary School, Gandaki & 2017 -- 2019 \\
+\end{tabularx}
+
+\end{document}
