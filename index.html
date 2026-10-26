@@ -65,9 +65,7 @@
       </aside>
  <main class="content" id="main" tabindex="-1">
 <section class="hero" aria-labelledby="intro-title">
- <p class="eyebrow">Multimodal AI · 3D vision · Agentic systems</p>
- <h1 id="intro-title">Building AI that understands<br class="desktop-break" /> the <em>physical world.</em></h1>
- <p class="intro">I’m Nabaraj, a graduate researcher working at the intersection of multimodal learning, retrieval, and the built environment.</p>
+ <h1 id="intro-title" class="hero-tagline">Multimodal LLMs · 3D vision · Agentic systems</h1>
  <p>I’m an M.S. student in Computer Science at the University of Wyoming, advised by Dr. Shivanand V. Sheshappanavar and Dr. Ahmed Abdelaty. My research connects vision, language, and 3D geometry to help AI reason about real engineering problems.</p>
  <p>I’m fascinated by this question: <strong>How can we build AI systems that bring together multiple modalities to understand and interact with the real world?</strong></p>
  <div class="actions"><a class="button button-primary" href="publications.html">Explore my research <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="cv.html">View CV <span aria-hidden="true">↓</span></a></div>
@@ -75,20 +73,26 @@
 <section class="research-section" aria-labelledby="research-title">
  <div class="section-heading"><h2 id="research-title">Current research</h2><span class="section-note">The questions behind the work</span></div>
  <div class="research-grid">
- <article class="research-card"><span class="card-number">01 / 3D VISION</span><h3>ConstructGPT</h3><p class="question">How can we spot construction issues from 3D scans?</p><p>Compare site geometry with BIM to support monitoring and compliance checks.</p><a href="https://openreview.net/forum?id=t3Q5oP7iCL" target="_blank" rel="noreferrer">Read the paper ↗</a></article>
+ <article class="research-card"><span class="card-number">01 / 3D VISION</span><h3>ConstructGPT</h3><p class="question">How can we model construction sites using diffusion, world models, and multimodal RAG?</p><p>Compare site geometry with BIM to support monitoring and compliance checks.</p><a href="https://openreview.net/forum?id=t3Q5oP7iCL" target="_blank" rel="noreferrer">Read the paper ↗</a></article>
  <article class="research-card"><span class="card-number">02 / MULTIMODAL RAG</span><h3>PlanSightRAG</h3><p class="question">How can AI answer questions about engineering drawings?</p><p>Retrieve visual evidence directly from plans to ground answers and compliance decisions.</p><a href="https://arxiv.org/abs/2608.26091" target="_blank" rel="noreferrer">Read the paper ↗</a></article>
  <article class="research-card"><span class="card-number">03 / AGENTIC AI</span><h3>WYDOT assistant</h3><p class="question">How can engineers find answers across scattered documents?</p><p>Connect engineering documents in a knowledge graph for multi-agent retrieval and reasoning.</p><a href="assets/Nabaraj_Subedi_CV.pdf" target="_blank" rel="noreferrer">Details in my CV ↗</a></article>
  </div>
 </section>
 <section aria-labelledby="selected-title">
  <div class="section-heading"><h2 id="selected-title">Selected research</h2><a class="text-link" href="publications.html">All publications <span aria-hidden="true">↗</span></a></div>
- <ol class="pub-list"><li class="publication" id="constructgpt">
+ <ol class="pub-list"><li class="publication has-teaser" id="constructgpt">
+ <a class="pub-teaser" href="assets/teasers/constructgpt.png" target="_blank" rel="noreferrer"><img src="assets/teasers/constructgpt.png" alt="ConstructGPT overview: as-built scan versus planned BIM, next-phase forecast, and a compliance agent" loading="lazy" /></a>
+ <div class="pub-body">
  <div class="publication-top"><span class="eyebrow">3D vision · World models</span><span class="status published">Poster</span></div>
- <h3><a href="https://openreview.net/forum?id=t3Q5oP7iCL" target="_blank" rel="noreferrer">ConstructGPT: BIM-Conditioned 3D Diffusion and World Models for Automated Construction Site Monitoring and Compliance Checking</a></h3><p class="pub-authors"><strong>N. Subedi</strong>, Y. Majeed, A. Abdelaty, S. V. Sheshappanavar</p><p class="pub-venue">CVPR 2026 Workshop on 3D-LLM/VLA</p><div class="pub-links"><a href="https://openreview.net/forum?id=t3Q5oP7iCL" target="_blank" rel="noreferrer">Paper ↗</a></div></li><li class="publication" id="plansightrag">
+ <h3><a href="https://openreview.net/forum?id=t3Q5oP7iCL" target="_blank" rel="noreferrer">ConstructGPT: BIM-Conditioned 3D Diffusion and World Models for Automated Construction Site Monitoring and Compliance Checking</a></h3><p class="pub-authors"><strong>N. Subedi</strong>, Y. Majeed, A. Abdelaty, S. V. Sheshappanavar</p><p class="pub-venue">CVPR 2026 Workshop on 3D-LLM/VLA</p><div class="pub-links"><a href="https://openreview.net/forum?id=t3Q5oP7iCL" target="_blank" rel="noreferrer">Paper ↗</a></div>
+ </div></li><li class="publication has-teaser" id="plansightrag">
+ <a class="pub-teaser" href="assets/teasers/plansightrag.png" target="_blank" rel="noreferrer"><img src="assets/teasers/plansightrag.png" alt="PlanSightRAG teaser: text and low-resolution retrieval fail while patch-level visual retrieval succeeds" loading="lazy" /></a>
+ <div class="pub-body">
  <div class="publication-top"><span class="eyebrow">Multimodal RAG · Civil engineering</span><span class="status review">Second revision</span></div>
- <h3><a href="https://arxiv.org/abs/2608.26091" target="_blank" rel="noreferrer">PlanSightRAG: A Visual-First Multimodal RAG for Automating Question Answering and Compliance Checking for Civil Standard Plans</a></h3><p class="pub-authors"><strong>N. Subedi</strong>, D. Suvo, A. Abdelaty, S. V. Sheshappanavar</p><p class="pub-venue">Automation in Construction</p><div class="pub-links"><a href="https://arxiv.org/abs/2608.26091" target="_blank" rel="noreferrer">arXiv ↗</a><a href="https://github.com/Nabarajsub/plansightrag" target="_blank" rel="noreferrer">Code ↗</a></div></li><li class="publication" id="montageflow">
+ <h3><a href="https://arxiv.org/abs/2608.26091" target="_blank" rel="noreferrer">PlanSightRAG: A Visual-First Multimodal RAG for Automating Question Answering and Compliance Checking for Civil Standard Plans</a></h3><p class="pub-authors"><strong>N. Subedi</strong>, S. D. Datta, A. Abdelaty, S. V. Sheshappanavar</p><p class="pub-venue">Automation in Construction</p><div class="pub-links"><a href="https://arxiv.org/abs/2608.26091" target="_blank" rel="noreferrer">arXiv ↗</a><a href="https://github.com/Nabarajsub/plansightrag" target="_blank" rel="noreferrer">Code ↗</a></div>
+ </div></li><li class="publication" id="montageflow">
  <div class="publication-top"><span class="eyebrow">Generative modeling · EEG</span><span class="status review">Under review</span></div>
- <h3><a href="https://arxiv.org/abs/2610.14507" target="_blank" rel="noreferrer">MontageFlow: Physically Valid High-Fidelity EEG Generation</a></h3><p class="pub-authors">S. Regmi, <strong>N. Subedi</strong>, A. Pillai, Y. Y. Wu, Y. Chen, M. V. Heinz, L. Marsch, N. C. Jacobson, A. Campbell</p><p class="pub-venue">ICLR 2027</p><div class="pub-links"><a href="https://arxiv.org/abs/2610.14507" target="_blank" rel="noreferrer">arXiv ↗</a></div></li></ol>
+ <h3><a href="https://arxiv.org/abs/2610.14507" target="_blank" rel="noreferrer">MontageFlow: Physically Valid High-Fidelity EEG Generation</a></h3><p class="pub-authors">S. Regmi, <strong>N. Subedi</strong>, A. Pillai, Y. Y. Wu, Y. Chen, M. V. Heinz, L. Marsch, N. C. Jacobson, A. Campbell</p><p class="pub-venue">arXiv preprint · 2026</p><div class="pub-links"><a href="https://arxiv.org/abs/2610.14507" target="_blank" rel="noreferrer">arXiv ↗</a></div></li></ol>
 </section>
 <section aria-labelledby="experience-title">
  <div class="section-heading"><h2 id="experience-title">Experience</h2><span class="section-note">Research &amp; practice</span></div>
@@ -104,7 +108,7 @@
  <div class="timeline"><article class="timeline-item"><p class="date">2025 — 2027<br />(expected)</p><div><h3>M.S. in Computer Science</h3><p>University of Wyoming · GPA 4.00/4.00</p></div></article><article class="timeline-item"><p class="date">2019 — 2024</p><div><h3>B.E. in Electronics, Communication &amp; Information Engineering</h3><p>Institute of Engineering · Tribhuvan University, Nepal</p></div></article></div>
 </section>
 <section class="recognition" aria-labelledby="recognition-title"><h2 id="recognition-title">Recent highlights</h2><p><strong>Graduate Scholar Award</strong> · School of Computing, University of Wyoming · $5,000 · 2026–2027</p><p><strong>UW AI Summit, September 2026</strong> · Lightning talk: “Teaching Models to Work in 3D: Perceiving, Predicting, and Generating 3D Infrastructure Geometry.”</p></section>
-<section class="contact-block"><p class="eyebrow">Let’s connect</p><h2>Ideas are better in collaboration.</h2><p>I’m open to collaborations in multimodal AI, 3D vision, and domain applications.</p><a class="text-link" href="mailto:nsubedi1@uwyo.edu">nsubedi1@uwyo.edu <span aria-hidden="true">↗</span></a></section>
+<section class="contact-block"><p class="eyebrow">Let’s connect</p><h2>Ideas are better in collaboration.</h2><p>I’m open to collaborations in multimodal AI and domain applications.</p><a class="text-link" href="mailto:nsubedi1@uwyo.edu">nsubedi1@uwyo.edu <span aria-hidden="true">↗</span></a></section>
 </main>
  </div>
  <footer class="site-footer"><div class="container footer-inner"><p>© <span id="year">2026</span> Nabaraj Subedi</p><p>Laramie, Wyoming <span aria-hidden="true">·</span> <a href="mailto:nsubedi1@uwyo.edu">Get in touch ↗</a></p></div></footer>

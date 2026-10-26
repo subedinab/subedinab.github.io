@@ -91,6 +91,17 @@ h3 { font-size: 1rem; line-height: 1.5; margin: 0 0 8px; font-weight: 600; }
 .pub-links { display: flex; flex-wrap: wrap; gap: 18px; font-size: 12px; font-weight: 600; }
 .pub-links a { min-height: 30px; display: inline-flex; align-items: center; }
 .unavailable { color: var(--muted); font-weight: 400; }
+.publication.has-teaser { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 26px; align-items: start; }
+.pub-teaser { display: flex; align-items: center; justify-content: center; height: 160px; padding: 8px; background: #fff; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; transition: border-color .15s; }
+.pub-teaser:hover { border-color: var(--accent); }
+.pub-teaser img { max-height: 100%; width: auto; object-fit: contain; }
+.pub-group { margin-top: 44px; }
+.bibtex summary { min-height: 30px; display: inline-flex; align-items: center; color: var(--accent); cursor: pointer; list-style: none; }
+.bibtex summary::-webkit-details-marker { display: none; }
+.bibtex summary::after { content: ' ▾'; font-size: 10px; margin-left: 3px; }
+.bibtex[open] summary::after { content: ' ▴'; }
+.bibtex[open] { flex-basis: 100%; }
+.bibtex pre { margin: 6px 0 0; padding: 14px 16px; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; font-size: 11px; font-weight: 400; line-height: 1.55; color: var(--strong); overflow-x: auto; }
 .timeline-item { display: grid; grid-template-columns: 139px minmax(0, 1fr); gap: 24px; padding: 0 0 23px; }
 .timeline-item:last-child { padding-bottom: 0; }
 .timeline-item h3 { margin: 0 0 3px; }
@@ -214,4 +225,9 @@ h3 { font-size: 1rem; line-height: 1.5; margin: 0 0 8px; font-weight: 600; }
   .publication, .timeline-item, .research-card { break-inside: avoid; }
   a { color: inherit; }
   h1 { font-size: 30px; }
+}
+.hero-tagline { font-size: clamp(1.9rem, 3vw, 2.6rem); }
+@media (max-width: 760px) {
+  .publication.has-teaser { grid-template-columns: 1fr; gap: 14px; }
+  .pub-teaser { height: 200px; }
 }
